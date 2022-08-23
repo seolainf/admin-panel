@@ -1,0 +1,58 @@
+@import "../../index.scss";
+.home {
+  position: relative;
+  padding: 20px;
+  &__bills {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 20px 0;
+  }
+  &__invoices {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 20px 0;
+    &_img {
+      width: 290px;
+      height: 510px;
+      transition: transform 0.2s linear;
+      &:hover {
+        transform: translateY(-5px);
+      }
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    &_chart {
+      flex: 1;
+      margin-left: 20px;
+      padding: 20px;
+      height: 510px;
+      background-color: rgba($color: $violetColor, $alpha: 0.1);
+      border-radius: 20px;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+  }
+  &___card {
+    position: relative;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+    .cart {
+      width: 100%;
+    }
+  }
+  &___chart {
+    width: 700px;
+    height: 400px;
+  }
+}

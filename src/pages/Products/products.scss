@@ -1,0 +1,29 @@
+@import "../../index.scss";
+
+.products {
+  position: relative;
+  width: 100%;
+  padding: 20px 30px;
+  &__title {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  &__addNew {
+    padding: 10px 20px;
+    color: $blackGray;
+    background-color: #f2f4fd;
+    border-radius: 20px;
+    border: 1px solid transparent;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 15px 15px rgba($color: $blueColor, $alpha: 0.6);
+    transition: transform 0.2s linear;
+    cursor: pointer;
+    &:hover {
+      color: $redColor;
+      transform: translateY(-5px);
+    }
+  }
+}

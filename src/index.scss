@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+
+$bodyBg: #eaecfc;
+$blackColor: #0f0f10;
+$greenColor: #29c990;
+$redColor: #fc2022;
+$violetColor: #735adc;
+$blueColor: #615ffe;
+$pinkColor: #7f08f6;
+$grayColor: #7e7e7e;
+$blackGray: #495b67;
+$whiteColor: #ffff;
+
+html {
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+}
+body {
+  min-height: 100vh;
+  &::-webkit-scrollbar {
+    width: 10px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: $violetColor;
+  }
+  &::-webkit-scrollbar-track {
+    background-color: $blackGray;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+input,
+button,
+textarea {
+  outline: none;
+  border: 1px solid transparent;
+  font-family: "Montserrat", sans-serif;
+}
+button {
+  cursor: pointer;
+}
+.navlink {
+  text-decoration: none;
+  color: inherit;
+}
+.app {
+  position: relative;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  &__sidebar {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100%;
+    min-height: 100vh;
+    margin-right: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-image: linear-gradient(to right, $bodyBg 50%, $bodyBg);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+  }
+}
+main {
+  flex: 1;
+  border-radius: 50px;
+  min-height: 100vh;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  background-color: $bodyBg;
+}
